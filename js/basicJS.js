@@ -91,6 +91,7 @@ function filterLongWords(arr,i){
     return longest;
 }
 
+
 /*-------------------------------Testing functions on console-------------------------------*/
 console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10)));
 console.log("Expected output of maxOfThree(20,10,100) is 100  " + myFunctionTest(100, maxOfThree(20, 10, 100)));
@@ -105,6 +106,7 @@ console.log("Expected output of findLongestWord(['find','the','longest','word'])
 const exp=['find','longest','word']
 console.log("Expected output of filterLongWords(['find','the','longest','word'],3) is [find, longest, word] : Found = ["
     + filterLongWords(words,3) +"]");
+
 
 /*------------------------------------Js fiddle modification------------------------------------*/
 const a = [1,3,5,3,3];
