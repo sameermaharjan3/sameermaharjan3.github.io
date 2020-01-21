@@ -7,9 +7,24 @@ not having variable types, etc. and I am sure there will be more as I explore mo
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
     <script src="basicJS.js"></script>
 </head>
 <body>
+<div id="mocha"></div>
+
+<script src="https://unpkg.com/chai/chai.js"></script>
+<script src="https://unpkg.com/mocha/mocha.js"></script>
+
+<script class="mocha-init">
+    mocha.setup('bdd');
+    mocha.checkLeaks();
+</script>
+<script src="basicJSTest.js"></script>
+<script class="mocha-exec">
+    mocha.run();
+</script>
 Look in the Chrome developer console to see the output. CTRL_SHIFT_J
 </body>
 </html>
+

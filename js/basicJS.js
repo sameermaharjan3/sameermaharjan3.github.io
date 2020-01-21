@@ -1,3 +1,40 @@
+/*My implementation of map function*/
+function myMap(array,mapFunc){
+    let arr = [];
+    for(let i=0;i<array.length;i++){
+        arr[i] = mapFunc(array[i]);
+    }
+    return arr;
+}
+
+/*My implementation of filter function*/
+function myFilter(array,filterFunc) {
+    let arr = [];
+    for(let i=0;i<array.length;i++){
+        if(filterFunc(array[i]) === true) {
+            arr.push(array[i]);
+        }
+    }
+    return arr;
+}
+
+const a1 = [
+    "Hydrogen",
+    "Helium",
+    "Lithium",
+    "Beryllium"
+];
+
+const a2 = myMap(a1,function(s) {
+    return s.length;
+});
+
+const a3 = myFilter(a1,function(s) {return s.length > 7 });
+console.log("a3: " + a3);
+console.log("a2: " + a2);
+
+
+
 /* runs test to see if expected argument is === to value returned by function2test argument */
 function myFunctionTest(expected, found) {
     if (expected === found) {
