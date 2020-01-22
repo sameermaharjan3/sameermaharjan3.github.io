@@ -1,7 +1,7 @@
 window.onload = function() {
     "use strict";
 
-
+    let speed = 250;
     let timer = null;
 
     /* assign event handler as respect to their id */
@@ -15,25 +15,17 @@ window.onload = function() {
     selectFontSize.onchange = setFontSize;
 
     let getTextArea = document.getElementById("text-area");
-
     let selectAnimation = document.getElementById("animation");
 
     let isChecked = document.getElementById("turbo");
-    isChecked.onclick = turboOnChecked;
+    isChecked.onchange = turboOnChecked;
 
     /* change the font size in the text area */
     function setFontSize(){
-/*        Optional code for the function using if else*/
-        /*if(selectFontSize.value === "Tiny"){getTextArea.style.fontSize = "7pt";}
-        else if(selectFontSize.value === "Small"){getTextArea.style.fontSize = "10pt";}
-        else if(selectFontSize.value === "Medium"){getTextArea.style.fontSize = "12pt";}
-        else if(selectFontSize.value === "Large"){getTextArea.style.fontSize = "16pt";}
-        else if(selectFontSize.value === "Extra Large"){getTextArea.style.fontSize = "24pt";}
-        else if(selectFontSize.value === "XXL"){getTextArea.style.fontSize = "32pt"}*/
 
         /*Avoiding if else code to make it simpler*/
         let size = selectFontSize.value;
-        if(size===null){size="12pt";}
+        if(size === null){size="12pt";}
         getTextArea.style.fontSize = parseInt(size) + 'pt';
     }
 
@@ -44,29 +36,16 @@ window.onload = function() {
         startButton.disabled = true;
         stopButton.disabled = false;
 
-        /*select respective animation */
-        if(selectAnimation.value === "Exercise"){
-            doThisAnimation(ANIMATIONS["Exercise"]);
-        }
-        else if(selectAnimation.value === "Juggler"){
-            doThisAnimation(ANIMATIONS["Juggler"]);
-        }
-        else if(selectAnimation.value === "Bike"){
-            doThisAnimation(ANIMATIONS["Bike"]);
-        }
-        else if(selectAnimation.value === "Dive"){
-            doThisAnimation(ANIMATIONS["Dive"]);
-        }
-        else if(selectAnimation.value === "Blank"){
-            resetViewer();
-        }
+        doThisAnimation(ANIMATIONS[selectAnimation.value]);
     }
 
     /*convert the animation string into array to display each frame repeatedly*/
     function doThisAnimation(animationType){
         const splitFrames = animationType.split("=====\n");
         let index = 0;
-        timer = setInterval(function(){repeatAnimation(splitFrames[index++%splitFrames.length])},250);
+        timer = setInterval(function(){
+            repeatAnimation(splitFrames[index++%splitFrames.length]);
+        },speed);
     }
 
     /*display a frame in text area*/
@@ -77,7 +56,7 @@ window.onload = function() {
     /*this function clear the text box and reset timer*/
     function resetViewer(){
         getTextArea.innerHTML = "";
-        clearTimeout(timer);
+        window.clearTimeout(timer);
         startButton.disabled = false;
         stopButton.disabled = true;
     }
@@ -85,9 +64,11 @@ window.onload = function() {
     /*this function speed up animation*/
     function turboOnChecked(){
         if(isChecked.checked === true){
-            window.setInterval.timeout = "50ms"
+            speed = 50;
         }else{
-            window.setInterval.timeout = "250ms";
+            speed  = 250;
         }
+        clearInterval(timer);
+        setAnimation();
     }
 };
