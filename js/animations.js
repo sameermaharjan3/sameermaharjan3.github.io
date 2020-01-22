@@ -14,6 +14,7 @@
 // TO ADD YOUR CUSTOM ANIMATION, CREATE YOUR OWN FILE myanimation.js AND
 // PUT YOUR CODE IN THERE.  In myanimation.js, it is legal for you to modify
 // the variables that have been declared in this file.
+/*jshint esversion: 6 */
 
 var BLANK = "";
 

@@ -50,7 +50,7 @@ function max(a, b) {
         return a;
     } else {
         return b;
-    };
+    }
 }
 
 /*maxofThree returns the maximum of 3 arguements*/
@@ -67,7 +67,7 @@ function maxOfThree(num1,num2,num3){
         }else{
             return num3;
         }
-    };
+    }
 }
 
 /*isVowel check if the given character is a vowel*/
@@ -76,13 +76,13 @@ function isVowel(c){
         return true;
     }else{
         return false;
-    };
+    }
 }
 
 /*sum adds up all the numbers in the array*/
 function sum(arr){
     let add = 0;
-    for(i=0;i<arr.length;i++){
+    for(let i=0;i<arr.length;i++){
         add = add + arr[i];
     }
     return add;
@@ -91,7 +91,7 @@ function sum(arr){
 /*multiply gives product of all elements in the array*/
 function multiply(arr){
     let result = 1;
-    for(i=0;i<arr.length;i++){
+    for(let i=0;i<arr.length;i++){
         result = result * arr[i];
     }
     return result;
@@ -100,7 +100,7 @@ function multiply(arr){
 /*this function reverses string*/
 function reverse(str){
     let rev = str.charAt(str.length-1);
-    for(i=str.length-2;i>=0;i--){
+    for(let i=str.length-2;i>=0;i--){
         rev = rev + str.charAt(i)
     }
     return rev;
@@ -109,7 +109,7 @@ function reverse(str){
 /*finds longest word in the array*/
 function findLongestWord(arr){
     let longest = arr[0];
-    for(i=1;i<arr.length;i++){
+    for(let i=1;i<arr.length;i++){
         if(longest.length < arr[i].length){
             longest = arr[i];
         }
@@ -149,7 +149,7 @@ console.log("Expected output of filterLongWords(['find','the','longest','word'],
 const a = [1,3,5,3,3];
 const b = a.map(function(elem, i, array) {
     return elem * 10;
-})
+});
 console.log("Array multiplied by 10 : " +b);
 const c = a.filter(function(elem, i, array){
     return elem === 3;});
