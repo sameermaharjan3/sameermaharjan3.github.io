@@ -1,4 +1,3 @@
-
 #heading{
     border: solid black 3px;
     border-radius:5px;
@@ -10,10 +9,6 @@
 
 .fontArial p{
     margin:2px;
-}
-
-p::first-letter {
-    font-size:150%;
 }
 
 #copyright{
