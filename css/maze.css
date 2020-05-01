@@ -1,10 +1,18 @@
-/*
-CSE 190 M Lab 6 CSS file
-You don't need to download or edit this file.
-*/
-
+body{
+    background-image: url("../images/mouseCheese.jpg");
+    background-size: cover;
+}
 h1, h2 {
     text-align: center;
+}
+
+#heading{
+    border: solid black 3px;
+    border-radius:5px;
+    width:40%;
+    text-align: center;
+    background-color: rgba(176, 196, 222, 0.8);
+    margin: 5px auto;
 }
 
 p {
@@ -19,32 +27,34 @@ p {
     width: 500px;
 }
 
-#start, #end {
+#start, #end{
     position: absolute;
     top: 205px;
     height: 30px;
-    width: 30px;
-    border: 1px solid black;
+    width: 50px;
+    border: none;
     padding: 5px;
     cursor: default;
-
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 25pt;
     text-align: center;
 }
 
+
 #maze #start {
-    background-color: #88ff88;
+    background-image: url("../images/mouse.png");
+    background-size: 105%;
+    background-repeat: no-repeat;
     left: 0;
 }
 
 #maze #end {
-    background-color: #8888ff;
+    background-image: url("../images/cheese.png");
+    background-size: 105%;
+    background-repeat: no-repeat;
     right: 0;
 }
 
 div.boundary {
-    background-color: #eeeeee;
+    background-image: url("../images/wall.jpg");
     border: 1px solid black;
 }
 
@@ -55,7 +65,7 @@ div.boundary.example {
 }
 
 div.youlose {
-    background-color: #ff8888;
+    background-color: rgba(255, 136, 136, 0.8);
 }
 
 /*

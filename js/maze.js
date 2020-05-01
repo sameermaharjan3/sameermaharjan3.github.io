@@ -7,6 +7,10 @@ $(document).ready(function () {
 
     //Event handler for clicking start button which is letter 'S'
     $("#start").click(function () {
+        $("body").css({"background-image":'url("../images/cheer.png")',
+            "background-size":"10%",
+            "background-repeat":"repeat",
+            "color":"black"});
         $(".boundary").removeClass("youlose");
         $("#status").text("Move the mouse without touching boundary");
         gameStarted = true;
@@ -15,7 +19,8 @@ $(document).ready(function () {
     // Player lose the game if the mouse pointer goes outside of the maze
     $("#maze").mouseleave(function () {
         if (gameStarted === true) {
-            $("#status").text("You Lose ! You can't go outside the maze.");
+            $("#status").text("Nice try!!! But you can't do that!");
+            $("body").css({"background-image":'url("../images/suitGuy.jpg")',"background-size":"cover"});
             $(".boundary").addClass("youlose");
             gameStarted = false;
         }
@@ -24,7 +29,10 @@ $(document).ready(function () {
     // If the mouse touches the boundary, the game is lost
     $(".boundary").mouseover(function () {
         if (gameStarted === true) {
-            $("#status").text("You Lose !");
+            $("#status").text("Try Again!!! I know it's not that easy.");
+            $("body").css({"background-image":'url("../images/workOutFace.png")',
+                "background-size":"10%",
+                "background-repeat":"repeat"});
             $(".boundary").addClass("youlose");
             gameStarted = false;
         }
@@ -33,7 +41,12 @@ $(document).ready(function () {
     // Condition to win the game is to reach the end, which is letter 'E'
     $("#end").mouseover(function () {
         if (gameStarted === true) {
-            $("#status").text("You Win!:]");
+            $("#status").text("Congratulations!!! YOU WON");
+            $("#luck").text("(^.^)");
+            $("#objective").text("IT'S PARTY TIME!!!");
+            $("body").css({"background-image":'url("../images/champaign.jpg")',
+                            "background-size":"cover",
+                            "color":"#006911"});
             gameStarted = false;
         }
     });
