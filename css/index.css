@@ -13,8 +13,8 @@ html{
     font-family:Verdana,sans-serif;font-size:15px;
 }
 
-#home-content a:hover, #home-content a:visited{
-    text-decoration: none;
+a:hover, a:visited{
+    text-decoration: none !important;
 }
 .navbar-nav {
     width: 100%;
