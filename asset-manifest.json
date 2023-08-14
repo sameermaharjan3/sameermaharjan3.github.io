@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.af50f1c8.css",
+    "main.js": "/static/js/main.23d9cb23.js",
+    "static/media/ascii.jpg": "/static/media/ascii.50764b3eeef34cd1c8c6.jpg",
+    "static/media/killKorona.jpg": "/static/media/killKorona.e7ecfcd9177598ee4dfe.jpg",
+    "static/media/puzzle.jpg": "/static/media/puzzle.95a984a1c17bec3904d6.jpg",
+    "static/media/movie.jpg": "/static/media/movie.ee1ff002f78ad1be7758.jpg",
+    "static/media/navyBluePoly.svg": "/static/media/navyBluePoly.11b6d8bdc49fd2d81a72.svg",
+    "static/media/imgGallery.jpg": "/static/media/imgGallery.6458a3ff92d3a692f503.jpg",
+    "static/media/jumpingRobo.jpg": "/static/media/jumpingRobo.7bdbb85db9a264c37cf0.jpg",
+    "static/media/sm-logo.JPG": "/static/media/sm-logo.ded724685a7e3d6f972f.JPG",
+    "static/media/virus.jpg": "/static/media/virus.5041e730d730ee6ca395.jpg",
+    "static/media/drum.png": "/static/media/drum.ea408745ff85878c16da.png",
+    "static/media/study.jpg": "/static/media/study.5c40cd0a72b836d7a379.jpg",
+    "static/media/bootstrap.png": "/static/media/bootstrap.02e16df6861464872846.png",
+    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/java.png": "/static/media/java.b1b659b679e43f5c28ba.png",
+    "static/media/spring.png": "/static/media/spring.78ae71ec6c071eaf1a0b.png",
+    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/mysql.png": "/static/media/mysql.c0d235a4e6858badd196.png",
+    "static/media/tailwind.png": "/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/index.html",
+    "main.af50f1c8.css.map": "/static/css/main.af50f1c8.css.map",
+    "main.23d9cb23.js.map": "/static/js/main.23d9cb23.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af50f1c8.css",
+    "static/js/main.23d9cb23.js"
+  ]
+}
