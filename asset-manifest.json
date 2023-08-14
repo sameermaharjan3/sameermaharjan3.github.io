@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.af50f1c8.css",
-    "main.js": "/static/js/main.23d9cb23.js",
+    "main.js": "/static/js/main.8b715ad1.js",
     "static/media/ascii.jpg": "/static/media/ascii.50764b3eeef34cd1c8c6.jpg",
     "static/media/killKorona.jpg": "/static/media/killKorona.e7ecfcd9177598ee4dfe.jpg",
     "static/media/puzzle.jpg": "/static/media/puzzle.95a984a1c17bec3904d6.jpg",
@@ -25,10 +25,10 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.af50f1c8.css.map": "/static/css/main.af50f1c8.css.map",
-    "main.23d9cb23.js.map": "/static/js/main.23d9cb23.js.map"
+    "main.8b715ad1.js.map": "/static/js/main.8b715ad1.js.map"
   },
   "entrypoints": [
     "static/css/main.af50f1c8.css",
-    "static/js/main.23d9cb23.js"
+    "static/js/main.8b715ad1.js"
   ]
 }
